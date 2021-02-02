@@ -13,8 +13,6 @@ const io = socketio(server, {
   },
 });
 
-const PORT = process.env.PORT || 5000;
-
 const router = require("./Router/router.js");
 const {
   addUser,
@@ -75,4 +73,4 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(PORT, () => console.log(`Server is Running ${PORT}`));
+server.listen(process.env.PORT || 5000, () => console.log(`Server is Running `));

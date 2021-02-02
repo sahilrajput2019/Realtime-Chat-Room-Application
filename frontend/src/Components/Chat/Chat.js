@@ -10,7 +10,7 @@ import Input from "../Input/Input";
 import "./Chat.css";
 
 let socket;
-const ENDPOINT = "localhost:5000";
+const ENDPOINT = "https://chat-chord-app.herokuapp.com/";
 
 const Chat = ({ location }) => {
   const [name, setName] = useState("");
